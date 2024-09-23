@@ -1,2 +1,0 @@
-# VQ
-pagina VQ
