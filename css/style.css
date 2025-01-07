@@ -391,3 +391,40 @@
     padding-right: 0;
     border-right: none;
 }
+
+@media (max-width: 991.98px) {
+    /* Asegura que el contenedor del navbar sea flexible */
+    .navbar > .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    /* Ajusta el logo para que no ocupe demasiado espacio */
+    .navbar-brand {
+        flex: 0 0 auto;
+        padding-right: 0 !important;
+    }
+
+    /* Ajusta el título para que sea más pequeño en móviles */
+    .navbar-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Asegura que el botón toggler esté alineado a la derecha */
+    .navbar-toggler {
+        margin-left: auto;
+        order: 2;
+    }
+
+    /* Ajusta el menú desplegable */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+    }
+}
